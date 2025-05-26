@@ -11,9 +11,9 @@ jobs:
           ref: main
           path: python
       - name: setting up the python env
-        uses: actions/setup-python@3.2
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.2
+          python-version: 3.11
       - name: installing tools for python
         run: python -m pip install flake8 pytest
       - name: running the lint test
