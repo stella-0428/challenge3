@@ -7,7 +7,6 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v3
         with:
-          repository: stella-0428/challenge3
           ref: main
           path: python
       - name: setting up the python env
@@ -25,15 +24,13 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v4
         with:
-          repository: stella-0428/challenge3
           ref: main
           path: python
       - name: upload to atrifact
         uses: actions/upload-artifact@v4
         with: 
-          repository: stella-0428/challenge3
-          ref: main
-          path: artifact
+          name: hello
+          path: .
     
              
         
